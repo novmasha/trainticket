@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:text="Введите свои данные"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="#686EE2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameIn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="ФИО"
+        android:paddingStart="14sp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#686EE1"
+        android:textColorHint="#686EE2"
+        android:background="#FEE4D6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/from"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:background="#FEE4D6"
+        android:ems="10"
+        android:hint="Откуда"
+        android:paddingStart="14sp"
+        android:textColor="#686EE1"
+        android:textColorHint="#686EE2"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameIn" />
+
+    <EditText
+        android:id="@+id/to"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:background="#FDE3D5"
+        android:ems="10"
+        android:hint="Куда"
+        android:paddingStart="14sp"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#686EE1"
+        android:textColorHint="#686EE2"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/from" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        android:text="Создать билет"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:backgroundTint="#686EE2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
